@@ -7,8 +7,7 @@ void RevertString(char *str)
 	char temp;
 	if(len<1) return;
 	int k = len-1;
-	for(int i=0;i<(len-1)/2;i++){
-		if(i>=k) return;
+	for(int i=0;i<k;i++){
 		temp = str[i];
 		str[i]=str[k];
 		str[k]=temp;
